@@ -20,8 +20,6 @@
   border-radius: 10px;
   -webkit-box-shadow: 0 7px 10px #929292;
           box-shadow: 0 7px 10px #929292;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .todo-form__input {
@@ -104,10 +102,16 @@
   padding: 0 5px;
   margin-right: 10px;
   background-color: #f7f7f7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .sort-list .sort-item__label:hover {
   background-color: #a5a5a5;
+}
+
+.sort-list .sort-item__label:active {
+  background-color: #9c99bd;
 }
 
 .sort-list .selected {

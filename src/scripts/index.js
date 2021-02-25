@@ -52,6 +52,7 @@ function sortBy(filter) {
       todosUL.querySelectorAll('.todo-list__item').forEach(element => {
         if (!element.classList.contains('completed')) {
           element.style.display = 'none';
+
           console.log(element);
         }
       })
@@ -106,9 +107,7 @@ function addTodo(todo) {
 
     todosUL.appendChild(item);
     input.value = '';
-    if (!disableWriting) {
-      updateLS();
-    }
+    updateLS();
   }
 }
 

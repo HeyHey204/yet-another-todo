@@ -18,7 +18,6 @@
   width: 600px;
   border-radius: 10px;
   box-shadow: 0 7px 10px #929292;
-  transition: 0.2s;
   &__input {
     font-size: 2rem;
     padding: 5px 20px;
@@ -57,13 +56,10 @@
 
 .sort-list{
   display: flex;
-  // background-color: #978bff;
   border-top: 1px solid #e5e5e5;
-  // flex-direction: row-reverse;
   justify-content: right;
   list-style: none;
   padding: 10px 20px;
-  // width: 50%;
   .sort-item{
     &__radio{
       display: none;
@@ -76,8 +72,12 @@
       padding: 0 5px;
       margin-right: 10px; 
       background-color: #f7f7f7;
+      transition: 0.2s;
       &:hover{
         background-color: #a5a5a5;
+      }
+      &:active{
+        background-color: #9c99bd;
       }
     }
     
