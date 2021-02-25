@@ -8,27 +8,25 @@
 .title {
   margin: 20px 0;
   font-size: 8rem;
-  color: #5a5a5a;
+  color: #978bff;
   text-align: center;
 }
 
 .todo-form {
   margin: auto;
   max-width: 100%;
-  width: 400px;
-  // background-color: #e3e3e3;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px #929292;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 7px 10px #929292;
   transition: 0.2s;
   &__input {
     font-size: 2rem;
-    // margin: 10px;
-    padding: 5px 5px;
+    padding: 5px 20px;
+    padding-bottom: 10px;
     outline: none;
     display: block;
     width: 100%;
     border-radius: 3px;
-    // border: 1px solid #a5a5a5;
     border: none;
     &:focus::placeholder {
       color: #a2a2a2;
@@ -44,7 +42,7 @@
     background-color: #fff;
     &__item{
       cursor: pointer;
-      padding: 10px;
+      padding: 10px 20px;
       border-top: 1px solid #e5e5e5;
     }
   }
@@ -54,4 +52,41 @@
 .completed{
   text-decoration: line-through;
   color: #a5a5a5;
+  background-color: #f7f7f7;
+}
+
+.sort-list{
+  display: flex;
+  // background-color: #978bff;
+  border-top: 1px solid #e5e5e5;
+  // flex-direction: row-reverse;
+  justify-content: right;
+  list-style: none;
+  padding: 10px 20px;
+  // width: 50%;
+  .sort-item{
+    &__radio{
+      display: none;
+    }
+    &__label{
+      cursor: pointer;
+      outline: none;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      padding: 0 5px;
+      margin-right: 10px; 
+      background-color: #f7f7f7;
+      &:hover{
+        background-color: #a5a5a5;
+      }
+    }
+    
+  }
+  .selected{
+    background-color: #d1ccfd;
+    cursor: default;
+    &:hover{
+      background-color: #d1ccfd;
+    }
+  }
 }

@@ -9,24 +9,25 @@
 .title {
   margin: 20px 0;
   font-size: 8rem;
-  color: #5a5a5a;
+  color: #978bff;
   text-align: center;
 }
 
 .todo-form {
   margin: auto;
   max-width: 100%;
-  width: 400px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 4px 10px #929292;
-          box-shadow: 0 4px 10px #929292;
+  width: 600px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 7px 10px #929292;
+          box-shadow: 0 7px 10px #929292;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .todo-form__input {
   font-size: 2rem;
-  padding: 5px 5px;
+  padding: 5px 20px;
+  padding-bottom: 10px;
   outline: none;
   display: block;
   width: 100%;
@@ -69,12 +70,52 @@
 
 .todo-form .todo-list__item {
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 20px;
   border-top: 1px solid #e5e5e5;
 }
 
 .completed {
   text-decoration: line-through;
   color: #a5a5a5;
+  background-color: #f7f7f7;
+}
+
+.sort-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.sort-list .sort-item__radio {
+  display: none;
+}
+
+.sort-list .sort-item__label {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-right: 10px;
+  background-color: #f7f7f7;
+}
+
+.sort-list .sort-item__label:hover {
+  background-color: #a5a5a5;
+}
+
+.sort-list .selected {
+  background-color: #d1ccfd;
+  cursor: default;
+}
+
+.sort-list .selected:hover {
+  background-color: #d1ccfd;
 }
 /*# sourceMappingURL=style.css.map */
