@@ -26,8 +26,6 @@ function sortBy(filter) {
     console.log(element);
 
   })
-
-
   switch (filter) {
     case 'all':
       console.log('all list');
@@ -57,11 +55,14 @@ function sortBy(filter) {
         }
       })
       break;
-
     default:
       break;
   }
 }
+
+console.log(todos);
+
+
 
 if (todos) {
   todos.forEach((todo) => {
