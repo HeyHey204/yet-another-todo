@@ -1,0 +1,23 @@
+{
+  "name": "yet-another-todo",
+  "version": "1.0.0",
+  "description": "TODO list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyHey204/yet-another-todo.git"
+  },
+  "keywords": [
+    "js",
+    "todo"
+  ],
+  "author": "Alexey <alexger204@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeyHey204/yet-another-todo/issues"
+  },
+  "homepage": "https://github.com/HeyHey204/yet-another-todo#readme"
+}
