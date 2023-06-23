@@ -1,2 +1,3 @@
 # yet-another-todo
-TODO list
+
+Deploy: [gh-pages](https://heyhey204.github.io/yet-another-todo/)
